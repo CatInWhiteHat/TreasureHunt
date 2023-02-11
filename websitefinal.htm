@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <link href='https://fonts.googleapis.com/css?family=Miriam Libre' rel='stylesheet'>
+  <style>
+    body {
+      text-align: center;
+      font-family: 'Miriam Libre';
+      color: white;
+      -webkit-text-stroke: 1.5px black;
+      background-color: black;
+      background-image: url('https://cdn.wallpapersafari.com/61/51/tD5s7W.jpg');
+      background-repeat: no-repeat;
+    }
+
+    .Invisabilty_Cloak {
+      display: none;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    input {
+      width: 25%;
+      padding: 5px 20px;
+      font-size: 40px;
+      text-align: center;
+      left: 50px;
+    }
+
+    #main {
+      padding-top: 50px;
+    }
+  </style>
+  <body>
+    <h id="a" style="font-size:250%; text-align:center;">
+      <br>Welcome to 7he
+    </h>
+    <h id="b" style="font-size:550%; text-align:center;">
+      <br>CHELICERAE
+    </h>
+    <p></p>
+    <div id="main">
+      <p id="oops" style="text-align:center;" class="hidden">You should refresh the page probably</p>
+      <button id="cipherbtn" onclick="show()" class="hidden">Click</button>
+      <button id="why" onclick="setTimeout(seriouslyWhy, 3500);" class="hidden">Try it</button>
+      <p id="riddletext" style="font-size:300%; color:green; text-align:center;" class="Invisabilty_Cloak">101 111 1011 1101 10001 10111</p>
+      <input id="myInput" value="" class="Invisabilty_Cloak">
+	<p id="yay" style="color:black; text-align:center;"" class="hidden"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Congratulations! <br>You solved my super secret awesome treasure hunt, killed the entity and saved all past and future victims (maybe?) yayyyyy!<br>Hope it was fun, haha idk and call me or let me know that you completed it :)<br>Happy Birthday dude!!!</p>
+      <img src="https://www.wpoven.com/blog/wp-content/uploads/2022/09/error-404-not-found.png" alt="error" class="hidden" id="crash">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Jumping_spider_fang_3D.jpg/200px-Jumping_spider_fang_3D.jpg" class="hidden" alt="spookyspider" id="aaaa">
+      <iframe width="2400" height="1100" src="https://www.youtube.com/embed/Di0dKYDGfy8?playlist=Di0dKYDGfy8&loop=1&autoplay=1&mute=1" class="hidden" id="deathscreen"></iframe>
+      <button id="enter" class="hidden" onclick="whenEnter()">Button</button>
+      <div>
+        <div id="visitors">
+          <p style="font-size:250%; text-align:center;">
+            <u>current v1sitors:</u>
+          </p>
+          <p style="font-size:225%; text-align:center;">Sarah 6aleb <br>Maria Phill4s <br>B5n Riely <br>He2ry Greene <br>Jame3 Paralives </p>
+          <div>
+	  
+            <script>
+              var input = document.getElementById("myInput");
+              input.addEventListener("keypress", function(event) {
+                if (event.key === "Enter") {
+                  event.preventDefault();
+                  document.getElementById("enter").click();
+                }
+              });
+
+              function whenEnter() {
+                console.log(input.value);
+                if (input.value == "11101") {
+                  document.getElementById("myInput").classList.add("hidden");
+                  document.body.style.backgroundColor = "white";
+                  document.getElementById("riddletext").classList.add("hidden");
+                  document.getElementById("visitors").classList.add("hidden");
+                  document.getElementById("a").classList.add("hidden");
+                  document.getElementById("b").classList.add("hidden");
+		  document.getElementById("yay").classList.remove("hidden");
+                  document.body.style.backgroundImage = "url('https://www.wpoven.com/blog/wp-content/uploads/2022/09/error-404-not-found.png')";
+                  alert("NoooOOOOooooo00!!");
+                } else {
+                  function1();
+                }
+              }
+
+              function show() {
+                document.getElementById("myInput").classList.remove("riddle");
+                document.getElementById("riddletext").classList.remove("riddle");
+              }
+              var response = 0;
+
+              function function1() {
+                response = response + 1
+                function2();
+                console.log(response);
+              };
+
+              function function2() {
+                if (response === 1) {
+                  alert("What are you doing?");
+                }
+                if (response === 2) {
+                  alert("Stop.");
+                }
+                if (response === 3) {
+                  alert("You really think you can kill me?");
+                }
+                if (response === 4) {
+                  alert("I'm warning you.");
+                }
+                if (response > 4 && response < 8) {
+                  alert("STOP!");
+                }
+                if (response === 8) {
+                  alert("You can't solve this, can you?");
+                }
+                if (response === 9) {
+                  alert("I don't know why I was worried.");
+                }
+                if (response === 10) {
+                  alert("Well, I caught you. You're dead now :/");
+                  document.getElementById("myInput").classList.add("hidden");
+                  document.body.style.backgroundColor = "white";
+                  document.getElementById("riddletext").classList.add("hidden");
+                  document.getElementById("visitors").classList.add("hidden");
+                  document.getElementById("a").classList.add("hidden");
+                  document.getElementById("b").classList.add("hidden");
+                  document.getElementById("deathscreen").classList.remove("hidden");
+                  document.body.style.backgroundImage = "url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYrZ8jUJKyIgvXjoMLRqtthncRwxl6a3lm0Q&usqp=CAU')";
+                  document.getElementById("why").click();
+                }
+              };
+
+              function seriouslyWhy() {
+                document.getElementById("deathscreen").classList.add("hidden");
+                document.getElementById("oops").classList.remove("hidden");
+              }
+            </script>
+  </body>
+</html>
+<!--https://drive.google.com/drive/u/1/folders/1gyTcx5k5UOqY2B2YQH76_WH9RmsHMafn-->
